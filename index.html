@@ -4,18 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Template</title>
-    <link rel="stylesheet" href="assets/style.css">
-    <script src="assets/app.js" defer></script>
+    <link rel="stylesheet" href="../assets/style.css">
+    <script src="../assets/app.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Engineering Handbook</h1>
-    </header>
-    <main>
-        <a href="six_sigma/module_1">Link Text</a>
-    </main>
-    <footer>
-        <p>&copy; 2025</p>
-    </footer>
+    <!--Navigation Bar-->
+    <nav class="navbar" id="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <hr>
+            <li><a href="six_sigma/module1.html">Six Sigma</a></li>
+            <hr>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="toggle-btn" id="toggleBtn">Hide</button>
+    </nav>
+    <button class="show-btn" id="showBtn">Show</button>
+    <!--Main Site Content-->
+    <div class="content">
+        <header>
+            <h1>Engineering Handbook</h1>
+        </header>
+        <main>
+            <p>Welcome to my engineering handbook. Find links in the navbar</p>
+        </main>
+        <footer>
+            <p>&copy; 2025</p>
+        </footer>
+    </div>
+    
 </body>
 </html>

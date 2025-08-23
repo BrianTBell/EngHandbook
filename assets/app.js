@@ -1,4 +1,4 @@
- const navbar = document.getElementById('navbar');
+const navbar = document.getElementById('navbar');
 const toggleBtn = document.getElementById('toggleBtn');
 const showBtn = document.getElementById('showBtn');
 toggleBtn.addEventListener('click', () => {
