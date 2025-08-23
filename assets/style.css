@@ -1,0 +1,44 @@
+ body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 200px;
+            background-color: #333;
+            color: white;
+            transform: translateX(0);
+            transition: transform 0.3s ease;
+        }
+        .navbar.hidden {
+            transform: translateX(-100%);
+        }
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        .navbar li {
+            padding: 15px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+        }
+        .toggle-btn {
+            position: fixed;
+            top: 10px;
+            left: 210px;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: left 0.3s ease;
+        }
+        .toggle-btn.hidden {
+            left: 10px;
+        }

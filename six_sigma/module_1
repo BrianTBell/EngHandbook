@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Template</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/app.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>RCA - Six Sigma</h1>
+        <h1>Engineering Handbook</h1>
     </header>
     <main>
-        <p>Content goes here.</p>
+        <a href="six_sigma/">Six Sigma</a>
     </main>
     <footer>
         <p>&copy; 2025</p>
