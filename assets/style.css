@@ -1,19 +1,53 @@
+:root {
+    --background-color: #F5F5F5;
+    --primary-text-color: #1A1A1A;
+    --primary-color: #2A4B7C;
+    --secondary-color: #D4E4FC;
+    --hover-color: #ff6200;
+}
+
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Raleway", sans-serif;
     transition: margin-left 0.3s ease;
+    color: var(--primary-text-color);
+    background-color: var(--background-color);
 }
 
 main {
     width: 95%
 }
 
+footer {
+    text-align: center;
+    padding: 30px 0px 50px 0px;
+}
+
 section {
     text-align: justify;
 }
 
-footer {
-    text-align: center;
+h1 {
+    font-size: 2.6em;
+    font-family: "Silkscreen", sans-serif;
+    color: var(--primary-color)
+}
+
+a {
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--hover-color);
+}
+
+li a:hover {
+    color: var(--hover-color);
+}
+
+summary:hover {
+    color: var(--hover-color);
 }
 
 .navbar {
@@ -22,10 +56,11 @@ footer {
     left: 0;
     height: 100%;
     width: 200px;
-    background-color: #333;
+    background-color: var(--primary-color);
     color: white;
     transform: translateX(0);
     transition: transform 0.3s ease;
+    padding: 6px;
     margin-right: 20px;
 }
 .navbar.hidden {
@@ -48,20 +83,22 @@ footer {
     top: 10px;
     right: 10px;
     padding: 10px;
-    background-color: #555;
-    color: white;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
     border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
 .show-btn {
     position: fixed;
     top: 10px;
-    left: 0;
+    left: 10px;
     width: 50px;
     height: 40px;
-    background-color: #555;
-    color: white;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
     border: none;
+    border-radius: 5px;
     cursor: pointer;
     display: none;
     z-index: 1000;
