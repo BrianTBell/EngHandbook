@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Handbook - Six Sigma: Module 1</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/app.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Navigation Bar-->
+    <nav class="navbar" id="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <!--Modules-->
+            <hr>
+            <p>Six Sigma</p>
+            <li><a href="module1.html">Module 1: Foundations & Principles</a></li>
+            <li><a href="module2.html">Module 2: Quality Tools & Metrics</a></li>
+            <li><a href="module3.html">Module 3: Team Basics</a></li>
+            <li><a href="module4.html">Module 4: Lead Foundations & Principles</a></li>
+            <hr>
+            <!--Footnotes-->
+            <li><a href="about.html">About & Contact</a></li>
+            <hr>
+            <!--Donation Station-->
+            <div class="donation_station">
+                <p>Like the notes? Treat my beautiful girlfriend to a matcha, or me a rolex!</p>
+                <img class="donation_image" src="assets/images/ProfilePic2.jpg">
+                <a class="donation_button_a" href="https://www.paypal.com/donate/?hosted_button_id=J3CBM6BLQTM54" target="_blank">
+                    <button class="donation_button">Donate &lt;3</button>
+                </a>
+            </div>
+        </ul>
+        <button class="toggle-btn" id="toggleBtn">Hide</button>
+    </nav>
+    <button class="show-btn" id="showBtn">Nav</button>
+    <!--Main Site Content-->
+    <div class="content">
+        <header>
+            <h1>Six Sigma: Mod.1</h1>
+        </header>
+        <main>
+            <!-- What's Six Sigma? -->
+            <section>
+                <h2>What's Six Sigma?</h2>
+                <p>Six Sigma is a structured, data-focused approach to enhance process quality and efficiency by minimizing defects and inconsistencies. Originating at Motorola in the 1980s, it employs statistical methods to pinpoint and address error causes, aiming for a near-perfect quality level of 3.4 defects per million opportunities. It uses the DMAIC framework (Define, Measure, Analyze, Improve, Control) and relies on certified professionals, such as Green Belts and Black Belts, to execute projects. Applied across various sectors, Six Sigma improves operational efficiency, reduces expenses, and boosts customer satisfaction.</p>
+            </section>
+            <hr>
+            <!-- What's the point of Six Sigma? -->
+            <section>
+                <h2>What's the point of Six Sigma?</h2>
+                <ul>
+                <li>Remove waste and lower costs.</li>
+                <li>Decrease process variation and errors.</li>
+                <li>Enhance processes and improve customer experience.</li>
+                </ul>
+            </section>
+            <hr>
+            <!-- Basic DMAIC breakdown -->
+            <section>
+                <h2>Basic DMAIC breakdown</h2>
+                <p>Six Sigma centers on the DMAIC methodology, a five-phase process for problem-solving. The acronym DMAIC stands for Define, Measure, Analyze, Improve, and Control. Below is a brief overview of each phase.</p>
+                <h3>1. Define</h3>
+                <p>Establish project objectives and scope, aligning with:</p>
+                <ul>
+                <li>Organizational goals.</li>
+                <li>Customer requirements.</li>
+                <li>The specific process needing enhancement.</li>
+                </ul>
+                <h3>2. Measure</h3>
+                <p>Identify the source of issues by collecting data to understand current process performance and set a baseline capability.</p>
+                <h3>3. Analyze</h3>
+                <p>Formulate hypotheses about root causes using data from the Measure phase, then validate these with evidence to confirm the problem’s origins.</p>
+                <h3>4. Improve</h3>
+                <p>Design, apply, and assess solutions aimed at the confirmed root causes, using data to verify that the fixes improve the process.</p>
+                <h3>5. Control</h3>
+                <p>Focus on maintaining solutions and ensuring long-term process stability, with room for future enhancements.</p>
+            </section>
+            <hr>
+            <!-- Founders of DMAIC -->
+            <section>
+                <h3>Founders of Six Sigma</h3>
+                <p>Brief details on key figures who shaped Six Sigma. Not critical, but helps deepen understanding of the methodology.</p>
+                <details>
+                <summary>History</summary>
+                <div>
+                    <h4>Bill Smith:</h4>
+                    <ul>
+                    <li>Introduced Six Sigma at Motorola in 1986 as a quality metric.</li>
+                    <li>Collaborated with Mikel Harry to create initial stages: measure, analyze, and control to reduce defects.</li>
+                    </ul>
+                    <h4>Mikel Harry:</h4>
+                    <ul>
+                    <li>Advanced Six Sigma with Richard Schroeder, establishing the Six Sigma Academy in 1994.</li>
+                    <li>Primary architect of the Six Sigma movement.</li>
+                    </ul>
+                    <h4>Crosby:</h4>
+                    <p>Developed the “four absolutes” of quality:</p>
+                    <ol>
+                    <li>Quality means meeting defined requirements.</li>
+                    <li>Quality systems focus on prevention, not correction.</li>
+                    <li>The goal is zero defects.</li>
+                    <li>Quality is measured by the cost of nonconformance.</li>
+                    </ol>
+                    <p>Essentially: Aim to get it right the first time.</p>
+                    <h4>Deming's 14 Points:</h4>
+                    <ol>
+                    <li>Maintain a steady focus on improving products and services, investing in long-term planning, research, and education.</li>
+                    <li>Embrace a new mindset, rejecting tolerance for errors or defects.</li>
+                    <li>Stop relying on mass inspection for quality; quality must be built into the process.</li>
+                    <li>Avoid choosing suppliers based only on price; aim for single-supplier partnerships to minimize costs.</li>
+                    <li>Continuously refine every process, from planning to delivery, to address issues early.</li>
+                    <li>Provide hands-on job training, similar to Japan’s manager internships across departments.</li>
+                    <li>Focus on leadership, not mere supervision, to guide teams effectively.</li>
+                    <li>Eliminate fear to create a secure work environment for optimal performance.</li>
+                    <li>Remove silos between departments, fostering cross-functional teams to solve problems.</li>
+                    <li>Avoid slogans or targets that lack actionable plans.</li>
+                    <li>Eliminate numerical quotas for workers and goals for managers.</li>
+                    <li>Remove obstacles that prevent pride in workmanship, such as annual performance ratings.</li>
+                    <li>Create a robust program for education and personal growth for all employees.</li>
+                    <li>Engage everyone in the organization to drive transformation.</li>
+                    </ol>
+                    <h4>Dr. Genichi Taguchi:</h4>
+                    <ul>
+                    <li>Pioneered Quality Engineering, the Loss Function, and Robust Design principles.</li>
+                    </ul>
+                    <h4>Feigenbaum's Total Quality Control:</h4>
+                    <ul>
+                    <li>Defined Total Quality Control as a system to unify quality development, maintenance, and improvement for cost-effective outcomes.</li>
+                    <li>Emphasized applying quality principles from design through delivery.</li>
+                    <li>Quality extends beyond just manufacturing.</li>
+                    </ul>
+                    <h4>Total Quality Control:</h4>
+                    <ul>
+                    <li>“An effective system for integrating quality development, maintenance, and improvement efforts across groups to enable production and service at the most economical levels for full customer satisfaction” (Feigenbaum, 1991).</li>
+                    </ul>
+                    <h4>Dr. Kaoru Ishikawa:</h4>
+                    <ul>
+                    <li>Developed the 5 Whys and Cause-and-Effect (Fishbone) Diagram, key tools for identifying problem causes.</li>
+                    </ul>
+                    <h4>Dr. Walter Shewhart:</h4>
+                    <ul>
+                    <li>Introduced methods to distinguish assignable and chance causes, monitored via statistical process control and PDCA (Plan, Do, Check, Act).</li>
+                    </ul>
+                    <h4>Juran's Trilogy:</h4>
+                    <p>Not diving deep, but Juran is known for his trilogy, which includes:</p>
+                    <ul>
+                    <li>Quality planning.</li>
+                    <li>Quality control.</li>
+                    <li>Quality improvement.</li>
+                    </ul>
+                </div>
+                </details>
+            </section>
+            <hr>
+            <!-- Key Concepts of Six Sigma -->
+            <section>
+                <h2>Key Concepts of Six Sigma</h2>
+                <ul>
+                <li>Align projects with customer expectations and strategic business goals.</li>
+                <li>Sponsors lead change, secure resources, and promote projects.</li>
+                <li>Base efforts on measurable data tied to customer service quality.</li>
+                <li>Identify metrics early, aligned with business goals, to ensure accountability.</li>
+                <li>Support with training and team deployment strategies.</li>
+                <li>Utilize Green, Black, and Master Black Belts to apply measurement, analysis, improvement, and control tools.</li>
+                </ul>
+                <p>Six Sigma and Lean drive organizational change, typically led from the top but applicable at any level.</p>
+            </section>
+            <hr>
+            <!-- Critical Success Factors -->
+            <section>
+                <h2>Critical Success Factors</h2>
+                <p>For Six Sigma and Lean to benefit an organization, several key factors must be in place:</p>
+                <ul>
+                <li>Full commitment across all organizational levels.</li>
+                <li>A strong focus on customers and openness to change.</li>
+                <li>Effective teamwork and comprehensive training.</li>
+                <li>Robust systems, procedures, and infrastructure for communication and collaboration.</li>
+                <li>Experts to analyze results and develop methods to measure and quantify improvements.</li>
+                </ul>
+                <p>Six Sigma and Lean act as tools for business transformation, often driven top-down but implementable anywhere.</p>
+            </section>
+            <hr>
+            <!-- Acceptable Standard Deviation -->
+            <section>
+                <h2>Acceptable Standard Deviation</h2>
+                <p>Six Sigma uses a Gaussian curve to model process variation, targeting 99.99966% defect-free output, or 3.4 defects per million opportunities. The process mean is the average, with defects only occurring ±6 sigma from it. A ±1.5 sigma shift accounts for long-term process drift due to factors like equipment wear or operator variability.</p>
+                <p>This shift adjusts the mean toward the upper or lower specification limit, turning a ±6 sigma process into ±4.5 sigma long-term, increasing defects if not addressed. The Control phase of DMAIC aims to prevent this shift. Defect rates by sigma level:</p>
+                <ul>
+                <li>6 sigma = 3.4 PPM</li>
+                <li>5 sigma = 233 PPM</li>
+                <li>4 sigma = 6,210 PPM</li>
+                <li>3 sigma = 66,810 PPM</li>
+                <li>2 sigma = 308,770 PPM</li>
+                <li>1 sigma = 691,462 PPM</li>
+                </ul>
+            </section>
+            <hr>
+            <!-- Evolution of Six Sigma -->
+            <section>
+                <h3>Evolution of Six Sigma</h3>
+                <p>Not critical, but a brief overview of its development.</p>
+                <details>
+                <summary>History</summary>
+                <div>
+                    <h4>Quality Consideration</h4>
+                    <p>Quality evolved from Statistical Process Control to Business Process Reengineering, Total Quality Management, and Six Sigma.</p>
+                    <p>Productivity progressed from the Ford Production System to the Toyota Production System, Just-in-Time philosophy, and Lean.</p>
+                    <p>Today, Lean and Six Sigma merge to combine quality and efficiency benefits.</p>
+                </div>
+                </details>
+            </section>
+            <hr>
+            <!-- What is Lean? -->
+            <section>
+                <h2>What is Lean?</h2>
+                <p>Lean, originating from the Toyota Production System in 1973, focuses on eliminating waste to improve process speed and efficiency through continuous improvement. Its five principles are:</p>
+                <ul>
+                <li>Value: Define what customers value.</li>
+                <li>Value chain: Map processes to identify waste.</li>
+                <li>Flow: Ensure smooth process operations.</li>
+                <li>Pull: Produce only what’s demanded.</li>
+                <li>Perfection: Strive for ongoing improvement.</li>
+                </ul>
+                <p>These principles are implemented using various Lean tools.</p>
+            </section>
+            <hr>
+            <!-- Value of Six Sigma to and Organization -->
+            <section>
+                <h2>Value of Six Sigma to and Organization</h2>
+                <p>Six Sigma enhances customer satisfaction and market share for both product and service companies. It uses SIPOC (Suppliers, Inputs, Processes, Outputs, Customers) to clarify project scope and benefits for stakeholders.</p>
+                <p>SIPOC ensures projects are well-defined, balancing customer needs and business goals, and highlights potential advantages of Six Sigma implementation.</p>
+                <p>At the organizational level, benefits include increased profits, business growth, more orders, and employee development.</p>
+                <p>Ultimately, customers and society benefit from improved quality, which reduces service costs, boosts margins, expands market share, and increases profitability.</p>
+            </section>
+            <hr>
+            <!-- The role of Individuals -->
+            <section>
+                <h2>The role of Individuals</h2>
+                <p>Six Sigma depends on strong teams made up of capable individuals. The Belbin model identifies preferred team roles based on nine strengths. One-on-one communication is the most effective method, preferred over emails, memos, or calls.</p>
+                <p>Ideal team member traits:</p>
+                <ul>
+                <li>Teamwork is a priority.</li>
+                <li>Contributes knowledge fully.</li>
+                <li>Listens actively and embraces others’ ideas.</li>
+                <li>Assists Black Belts with meeting management.</li>
+                <li>Completes tasks on time.</li>
+                <li>Communicates effectively across all levels.</li>
+                <li>Recognizes their role in the broader project.</li>
+                </ul>
+            </section>
+            <hr>
+            <!-- Yellow and Green Belts -->
+            <section>
+                <h2>Yellow and Green Belts</h2>
+                <p>A basic overview...</p>
+                <h3>Yellow Belts</h3>
+                <p>Yellow Belts have basic Six Sigma training, understanding key principles and terms to collaborate with other belt levels. Training targets supervisors, managers, directors, or executives, who may have less direct involvement with Six Sigma tools but play a vital role in advancing projects.</p>
+                <h3>Green Belts</h3>
+                <p>Green Belts receive comprehensive Six Sigma training, with less focus on advanced statistical methods. They handle simpler projects with responsibilities similar to Black Belts. Typically, Green Belts split their time between Six Sigma and other duties, unlike dedicated Black Belts.</p>
+            </section>
+            <hr>
+            <!-- The Fabled Black Belt -->
+            <section>
+                <h2>The Fabled Black Belt</h2>
+                <p>Black Belts are highly skilled in project management, statistical analysis, financial evaluation, meeting facilitation, and prioritization. They lead multiple projects, mentor lower belts, and quickly define and solve problems.</p>
+                <p>Black Belts may be dedicated Six Sigma professionals or managers who achieve Black Belt status.</p>
+                <h3>Exactly what do they do?</h3>
+                <p>Before a project:</p>
+                <ul>
+                <li>Review the project charter with the sponsor to understand its scope and importance.</li>
+                <li>Clarify roles and responsibilities for team members.</li>
+                <li>Consult with Master Black Belts to refine the charter.</li>
+                <li>Develop a project plan with team consensus.</li>
+                <li>Research project history and collect historical data.</li>
+                <li>Arrange meeting logistics and agendas.</li>
+                <li>Identify training needs with Master Black Belts.</li>
+                </ul>
+                <p>After a project:</p>
+                <ul>
+                <li>Complete and distribute project documentation.</li>
+                <li>Ensure process owners receive documentation for ongoing monitoring.</li>
+                <li>Document and share lessons learned.</li>
+                <li>Transition solution implementation to the work area manager and staff.</li>
+                </ul>
+            </section>
+            <hr>
+            <!-- Master Black Belt -->
+            <section>
+                <h2>Master Black Belt</h2>
+                <p>Master Black Belts are the most experienced Six Sigma experts, having led dozens of projects and often managing multiple simultaneously. They work with senior executives to align projects with business goals and advise on addressing quality issues.</p>
+                <p>Their team roles include:</p>
+                <ul>
+                <li>Deep knowledge of scientific methods.</li>
+                <li>Collaborating with Black Belts and sponsors on charters.</li>
+                <li>Remaining neutral in meetings to foster team synergy.</li>
+                <li>Assisting Black Belts with task assignments.</li>
+                <li>Teaching data collection and analysis techniques.</li>
+                <li>Encouraging teams to identify causes before solutions.</li>
+                <li>Supporting Black Belts to motivate hesitant team members.</li>
+                </ul>
+                <p>Before a project:</p>
+                <ul>
+                <li>Define training and education needs with Black Belts.</li>
+                <li>Help sponsors and Black Belts select team members.</li>
+                <li>Assist in drafting the project charter.</li>
+                <li>Review the charter with Black Belts and teams to create a project plan.</li>
+                </ul>
+                <p>During a project:</p>
+                <ul>
+                <li>Advise Black Belts on team progress and efficiency improvements.</li>
+                <li>Train teams in Six Sigma tools.</li>
+                <li>Help remove project barriers.</li>
+                <li>Meet regularly to monitor progress.</li>
+                </ul>
+            </section>
+            <hr>
+            <!-- Role of Champions -->
+            <section>
+                <h2>Role of Champions</h2>
+                <p>Champions, such as executives or managers, fund and drive Six Sigma projects, requiring a solid understanding of the methodology and team dynamics. Their responsibilities include:</p>
+                <ul>
+                <li>Providing strategic oversight.</li>
+                <li>Setting the project’s strategic direction.</li>
+                <li>Defining success criteria.</li>
+                <li>Resolving resource issues.</li>
+                <li>Conducting periodic progress reviews.</li>
+                <li>Assisting with solution implementation.</li>
+                <li>Helping select teams and communicate with Black Belts.</li>
+                </ul>
+            </section>
+            <!-- Role of Sponsors -->
+            <section>
+                <h2>Role of Sponsors</h2>
+                <p>Sponsors, similar to Champions but less hands-on, set the project’s direction and communicate at high organizational levels. Their responsibilities include:</p>
+                <ul>
+                <li>Drafting and defining the project charter.</li>
+                <li>Selecting team members.</li>
+                <li>Providing necessary resources.</li>
+                <li>Helping remove project barriers.</li>
+                </ul>
+                <p>At project’s end, Sponsors review results, celebrate successes, communicate outcomes to leadership, monitor changes, and implement solutions beyond the team’s authority. They also watch for future barriers and system needs.</p>
+            </section>
+            <!-- Role of Process Owners -->
+            <section>
+                <h2>Role of Process Owners</h2>
+                <p>Process Owners are experts in specific processes, serving as Champions or contributors. They may not be Black Belts but need basic statistical knowledge to support critical project processes.</p>
+            </section>
+        </main>
+        <footer>
+            <p>Brian Bell, 2025</p>
+        </footer>
+    </div>
+    
+</body>
+</html>
