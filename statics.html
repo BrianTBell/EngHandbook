@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Handbook - Six Sigma: Module 1</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/app.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Navigation Bar-->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-scroll">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <!--Modules-->
+                <hr>
+                <p>Statics</p>
+                <li><a href="statics.html">Equations</a></li>
+                <li><a href="#.html">Worked Examples</a></li>
+                <li><a href="#.html">#</a></li>
+                <li><a href="#.html">#</a></li>
+                <hr>
+                <!--Footnotes-->
+                <li><a href="about.html">About & Contact</a></li>
+                <hr>
+                <!--Donation Station-->
+                <div class="donation_station">
+                    <p>Like the notes? Treat my beautiful girlfriend to a matcha, or me a rolex!</p>
+                    <img class="donation_image" src="assets/images/ProfilePic2.jpg">
+                    <a class="donation_button_a" href="https://www.paypal.com/donate/?hosted_button_id=J3CBM6BLQTM54" target="_blank">
+                        <button class="donation_button">Donate &lt;3</button>
+                    </a>
+                </div>
+            </ul>
+        </div>
+        <button class="toggle-btn" id="toggleBtn">Hide</button>
+    </nav>
+    <button class="show-btn" id="showBtn">Nav</button>
+    <!--Main Site Content-->
+    <div class="content">
+        <header>
+            <h1>Statics</h1>
+        </header>
+        <main>
+            <!--Subtopic-->
+            <section>
+                <h2>What is Statics?</h2>
+                <p>Statics is a branch of mechanics that studies rigid bodies at rest or in constant motion. It focuses on analyzing forces, moments, and equilibrium to ensure structural stability. Core concepts include force resolution, friction, centroids, and moments of inertia, applied to structures like trusses, beams, and cables. Statics is essential for engineering design, providing the foundation for safe and efficient load-bearing systems.</p>
+            </section>
+            <hr>
+            <!--Equations-->
+            <section>
+                <h2>1. Equilibrium Conditions</h2>
+                <p>Forces: \( \sum \vec{F} = 0 \) (\( \sum F_x = 0, \sum F_y = 0, \sum F_z = 0 \))</p>
+                <p>Moments: \( \sum \vec{M} = 0 \) (about any point, \( \sum M_x = 0, \sum M_y = 0, \sum M_z = 0 \))</p>
+                <hr>
+
+                <h2>2. Force Components</h2>
+                <p>Rectangular Components (2D): \( F_x = F \cos\theta, F_y = F \sin\theta \)</p>
+                <p>Resultant Force: \( F_R = \sqrt{F_x^2 + F_y^2} \)</p>
+                <p>Resultant Angle: \( \theta = \tan^{-1}\left(\frac{F_y}{F_x}\right) \)</p>
+                <p>3D Components: \( \vec{F} = F_x \hat{i} + F_y \hat{j} + F_z \hat{k} \), \( F = \sqrt{F_x^2 + F_y^2 + F_z^2} \)</p>
+                <p>Direction Cosines: \( \cos\theta_x = \frac{F_x}{F}, \cos\theta_y = \frac{F_y}{F}, \cos\theta_z = \frac{F_z}{F} \)</p>
+                <hr>
+
+                <h2>3. Moment of a Force</h2>
+                <p>Scalar Moment (about point O): \( M = F \cdot d \) (d = perpendicular distance)</p>
+                <p>Vector Moment: \( \vec{M} = \vec{r} \times \vec{F} \)</p>
+                <p>Moment Components (3D):</p> 
+                <ul>
+                    <li>\(M_x = \sum y F_z - \sum z F_y\)</li>
+                    <li>\(M_y = \sum z F_x - \sum x F_z\)</li>
+                    <li>\(M_z = \sum x F_y - \sum y F_x \)</li>
+                </ul>
+                <p>Couple Moment: \( M = F \cdot d \) (force pair, independent of point)</p>
+                <hr>
+
+                <h2>4. Friction</h2>
+                <p>Static Friction: \( F_f \leq \mu_s N \)</p>
+                <p>Kinetic Friction: \( F_f = \mu_k N \)</p>
+                <p>Angle of Friction: \( \phi = \tan^{-1}(\mu_s) \)</p>
+                <p>Impending Motion: \( F_f = \mu_s N \)</p>
+                <p>Wedge/Block Systems: Apply equilibrium with friction at contact surfaces.</p>
+                <hr>
+
+                <h2>5. Centroid and Center of Gravity</h2>
+                <p>Centroid (Area, 2D):</p>
+                <p>\( \bar{x} = \frac{\sum x_i A_i}{\sum A_i} \)</p>
+                <p>\( \bar{y} = \frac{\sum y_i A_i}{\sum A_i} \)</p>
+                <p>Centroid (Volume, 3D):</p>
+                <p>\( \bar{x} = \frac{\sum x_i V_i}{\sum V_i} \), similarly for \( \bar{y}, \bar{z} \)</p>
+                <p>Center of Gravity: Same as centroid, weighted by mass: \( \bar{x} = \frac{\sum x_i m_i}{\sum m_i} \)</p>
+                <p>Composite Bodies: \( \bar{x} = \frac{\sum \bar{x}_i A_i}{\sum A_i} \) (or volume/mass)</p>
+                <hr>
+
+                <h2>6. Distributed Loads</h2>
+                <p>Resultant Force: \( F_R = \int_a^b w(x) \, dx \) (area under load curve)</p>
+                <p>Location of Resultant: \( \bar{x} = \frac{\int_a^b x w(x) \, dx}{\int_a^b w(x) \, dx} \)</p>
+                <p>Uniform Load: \( F_R = w \cdot L \), \( \bar{x} = \frac{L}{2} \)</p>
+                <p>Triangular Load: \( F_R = \frac{1}{2} w_{\text{max}} \cdot L \), \( \bar{x} = \frac{2L}{3} \) (from base)</p>
+                <hr>
+
+                <h2>7. Truss Analysis</h2>
+                <p>Method of Joints:</p>
+                <p>Joint equilibrium: \( \sum F_x = 0, \sum F_y = 0 \)</p>
+                <p>Method of Sections:</p>
+                <p>Cut section equilibrium: \( \sum F_x = 0, \sum F_y = 0, \sum M = 0 \)</p>
+                <p>Zero-Force Members: Identify via inspection (e.g., no external load at joint with two collinear members).</p>
+                <hr>
+
+                <h2>8. Beams</h2>
+                <p>Shear Force: \( V = \sum F \) (sum of vertical forces)</p>
+                <p>Bending Moment: \( M = \sum (F \cdot d) \) (sum of moments)</p>
+                <p>Shear Force Diagram: \( V(x) = \int w(x) \, dx \)</p>
+                <p>Moment Diagram: \( M(x) = \int V(x) \, dx \)</p>
+                <p>Point Load: \( V = P \), \( M = P \cdot x \)</p>
+                <p>Uniform Load: \( V = w (L - x) \), \( M = \frac{w x (L - x)}{2} \)</p>
+                <hr>
+
+                <h2>9. Area Moments of Inertia</h2>
+                <p>Second Moment of Area (about x-axis): \( I_x = \int y^2 \, dA \)</p>
+                <p>Second Moment of Area (about y-axis): \( I_y = \int x^2 \, dA \)</p>
+                <p>Polar Moment of Inertia: \( J = \int (x^2 + y^2) \, dA = I_x + I_y \)</p>
+                <p>Parallel Axis Theorem: \( I = \bar{I} + A d^2 \) (\( d \) = distance from centroid)</p>
+                <p>Common Shapes:</p>
+                <p>Rectangle: \( I_x = \frac{b h^3}{12} \), \( I_y = \frac{h b^3}{12} \)</p>
+                <p>Circle: \( J = \frac{\pi r^4}{4} \), \( I_x = I_y = \frac{\pi r^4}{4} \)</p>
+                <hr>
+                <p>Find something wrong? Want to contribute? Please email me!.</p>
+                <a href="mailto:briantbell.work@gmail.com">briantbell.work@gmail.com</a>
+            </section>
+        </main>
+        <footer>
+            <p>Brian Bell, 2025</p>
+        </footer>
+    </div>
+    
+</body>
+</html>
