@@ -52,6 +52,9 @@ summary:hover {
     color: var(--hover-color);
 }
 
+
+/* Donation Style */
+
 .donation_station {
     display: block;
     margin: 0 auto;
@@ -80,6 +83,9 @@ summary:hover {
     background: #20ff54;
     border: 2px;
 }
+
+
+/* Navbar Style */
 
 .navbar {
     position: fixed;
@@ -167,3 +173,53 @@ summary:hover {
         max-height: calc(100vh - 60px); /* Prevent overflow beyond toggle button */
     }
 }
+
+
+/* Bulletin Style */
+
+.bulletin-board {
+      background: url('https://i.imgur.com/7N4Y9Xq.jpg') no-repeat center/cover;
+      border: 10px solid #8B4513; /* Wood frame */
+      width: 80%;
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      border-radius: 5px;
+    }
+    .bulletin-board-title {
+      background: #fff;
+      display: inline-block;
+      padding: 5px 10px;
+      border: 2px solid #000;
+      border-radius: 5px;
+      margin: 0 auto;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+    .bulletin-board-list {
+      list-style-type: none;
+      padding: 0;
+    }
+    .bulletin-board-item {
+      background: #fffde7;
+      margin: 10px 0;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+      position: relative;
+    }
+    .bulletin-board-item::before {
+      content: '📌'; /* Pushpin emoji */
+      position: absolute;
+      top: -10px;
+      left: 10px;
+      font-size: 20px;
+    }
+    .centered-embed {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0;
+    }
