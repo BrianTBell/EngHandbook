@@ -178,48 +178,51 @@ summary:hover {
 /* Bulletin Style */
 
 .bulletin-board {
-      background: url('https://media.istockphoto.com/id/472321898/photo/empty-cork-notice-board-texture-and-background.jpg?s=612x612&w=0&k=20&c=7KXzdbAfFyA8W1D4csmuBAZe_XFDSoERk8ayS8jxZtw=') no-repeat center/cover;
-      border: 10px solid #8B4513; /* Wood frame */
-      width: 80%;
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-      border-radius: 5px;
-    }
-    .bulletin-board-title {
-      background: #fff;
-      display: inline-block;
-      padding: 5px 10px;
-      border: 2px solid #000;
-      border-radius: 5px;
-      margin: 0 auto;
-      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-      text-align: center;
-    }
-    .bulletin-board-list {
-      list-style-type: none;
-      padding: 0;
-    }
-    .bulletin-board-item {
-      background: #fffde7;
-      margin: 10px 0;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 3px;
-      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-      position: relative;
-    }
-    .bulletin-board-item::before {
-      content: '📌'; /* Pushpin emoji */
-      position: absolute;
-      top: -10px;
-      left: 10px;
-      font-size: 20px;
-    }
-    .centered-embed {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 20px 0;
-    }
+    /*background: url('https://imgc.allpostersimages.com/img/posters/eugene-sergeev-empty-bulletin-board-background-texture-natural-cork-board_u-l-q104sgb0.jpg?artHeight=550&artPerspective=n&artWidth=550&background=ffffff') no-repeat center/cover;*/
+    /*border: 10px solid #8B4513; /* Wood frame */
+    background: var(--secondary-color);
+    border: 10px solid var(--primary-color); /* Wood frame */
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+.bulletin-board-title {
+    background: #fff;
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    margin: 0 auto;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+.bulletin-board-list {
+    list-style-type: none;
+    padding: 0;
+}
+.bulletin-board-item {
+    background: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+.bulletin-board-item::before {
+    content: '📍';
+    position: absolute;
+    top: -12px;
+    left: -6px;
+    font-size: 20px;
+}
+
+.centered-embed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
