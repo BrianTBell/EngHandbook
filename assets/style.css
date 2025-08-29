@@ -21,7 +21,7 @@ main {
 footer {
     text-align: center;
     padding: 30px 0px 50px 0px;
-    max-width: 30%;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -178,7 +178,7 @@ summary:hover {
 /* Bulletin Style */
 
 .bulletin-board {
-      background: url('https://i.imgur.com/7N4Y9Xq.jpg') no-repeat center/cover;
+      background: url('https://media.istockphoto.com/id/472321898/photo/empty-cork-notice-board-texture-and-background.jpg?s=612x612&w=0&k=20&c=7KXzdbAfFyA8W1D4csmuBAZe_XFDSoERk8ayS8jxZtw=') no-repeat center/cover;
       border: 10px solid #8B4513; /* Wood frame */
       width: 80%;
       max-width: 800px;
