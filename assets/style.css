@@ -53,6 +53,12 @@ summary:hover {
 }
 
 
+/* figure */
+.figure {
+    width: 80%;
+}
+
+
 /* Donation Style */
 
 .donation_station {
