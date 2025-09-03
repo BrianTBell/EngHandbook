@@ -53,9 +53,37 @@ summary:hover {
 }
 
 
-/* figure */
+summary {
+    font-size: 1.4em;
+    padding: 10px 0px 10px 0px;
+}
+
+details details {
+    margin: 20px 0px 20px 20px;
+}
+
+details details details {
+    margin: 20px 0px 20px 40px;
+}
+
+ul ul {
+    padding: 20px 0px 20px 40px;
+}
+
+.padded-list {
+    padding: 10px 0px 10px 0px;
+}
+
+.comment {
+    color: var(--comment-text-color);
+}
+
+.warning {
+    color: red;
+}
+
 .figure {
-    width: 80%;
+    max-width: 80%;
 }
 
 
